@@ -1,8 +1,10 @@
 {
     "cSpell.words": [
+        "amqp",
         "bson",
         "gohtml",
         "Premailer",
+        "rabbitmq",
         "SSLTLS",
         "STARTTLS",
         "vanng",
