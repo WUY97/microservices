@@ -5,6 +5,7 @@
         "extendee",
         "gohtml",
         "Idxs",
+        "mailhog",
         "Premailer",
         "protobuf",
         "protoc",
@@ -15,6 +16,7 @@
         "STARTTLS",
         "vanng",
         "verysecret",
-        "xhit"
+        "xhit",
+        "yitong"
     ]
 }
