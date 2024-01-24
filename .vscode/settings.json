@@ -2,12 +2,19 @@
     "cSpell.words": [
         "amqp",
         "bson",
+        "extendee",
         "gohtml",
+        "Idxs",
         "Premailer",
+        "protobuf",
+        "protoc",
+        "protoimpl",
+        "protoreflect",
         "rabbitmq",
         "SSLTLS",
         "STARTTLS",
         "vanng",
+        "verysecret",
         "xhit"
     ]
 }
