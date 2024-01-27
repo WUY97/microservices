@@ -15,6 +15,12 @@ resource "google_compute_instance" "node-1" {
     }
   }
 
+  metadata_startup_script = <<-EOH
+    #!/bin/bash
+    sudo apt-get update
+    sudo apt-get upgrade -y
+    sudo apt install docker.io -y
+  EOH
   tags = ["docker-vm-v4", "docker-vm-v6"]
 }
 
