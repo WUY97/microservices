@@ -28,3 +28,11 @@ resource "google_dns_record_set" "smolivdev-A-swarm" {
     google_compute_instance.node-2.network_interface.0.access_config.0.nat_ip
   ]
 }
+
+resource "google_dns_record_set" "smolivdev-CNAME-broker" {
+  name         = "broker.smoliv.dev."
+  type         = "CNAME"
+  ttl          = 300
+  managed_zone = "smoliv-dev"
+  rrdatas      = ["swarm.smoliv.dev."]
+}
