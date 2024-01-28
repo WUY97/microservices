@@ -1,5 +1,5 @@
 resource "google_dns_record_set" "smolivdev-A-node-1" {
-  name         = "node-1.smoliv.dev."
+  name         = "node-1.${var.DOMAIN}"
   type         = "A"
   ttl          = 300
   managed_zone = "smoliv-dev"
@@ -9,7 +9,7 @@ resource "google_dns_record_set" "smolivdev-A-node-1" {
 }
 
 resource "google_dns_record_set" "smolivdev-A-node-2" {
-  name         = "node-2.smoliv.dev."
+  name         = "node-2.${var.DOMAIN}"
   type         = "A"
   ttl          = 300
   managed_zone = "smoliv-dev"
@@ -19,7 +19,7 @@ resource "google_dns_record_set" "smolivdev-A-node-2" {
 }
 
 resource "google_dns_record_set" "smolivdev-A-swarm" {
-  name         = "swarm.smoliv.dev."
+  name         = "swarm.${var.DOMAIN}"
   type         = "A"
   ttl          = 300
   managed_zone = "smoliv-dev"
@@ -30,9 +30,9 @@ resource "google_dns_record_set" "smolivdev-A-swarm" {
 }
 
 resource "google_dns_record_set" "smolivdev-CNAME-broker" {
-  name         = "broker.smoliv.dev."
+  name         = "broker.${var.DOMAIN}"
   type         = "CNAME"
   ttl          = 300
   managed_zone = "smoliv-dev"
-  rrdatas      = ["swarm.smoliv.dev."]
+  rrdatas      = ["swarm.${var.DOMAIN}"]
 }

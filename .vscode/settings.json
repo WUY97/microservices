@@ -5,15 +5,18 @@
         "dbname",
         "extendee",
         "gohtml",
+        "HSTS",
         "Idxs",
         "INITDB",
         "mailhog",
+        "nosniff",
         "Premailer",
         "protobuf",
         "protoc",
         "protoimpl",
         "protoreflect",
         "rabbitmq",
+        "smoliv",
         "sslmode",
         "SSLTLS",
         "STARTTLS",
@@ -21,6 +24,7 @@
         "vanng",
         "verysecret",
         "xhit",
-        "yitong"
+        "yitong",
+        "zstd"
     ]
 }

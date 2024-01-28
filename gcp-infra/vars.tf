@@ -14,17 +14,29 @@ variable "CREADENTIALS_PATH" {
 variable "REGION" {
     description = "The GCP region"
     type        = string
-    default    = "us-west1"
+    default    = "us-central1"
 }
 
 variable "ZONE" {
     description = "The GCP zone"
     type        = string
-    default    = "us-west1-b"
+    default    = "us-central1-b"
 }
 
 variable "TF_SERVICE_ACCOUNT" {
     description = "The GCP service account to impersonate"
     type        = string
     default    = "sa-gomicro-tf-mac@t-pulsar-412422.iam.gserviceaccount.com"
+}
+
+variable "MACHINE_TYPE" {
+    description = "The GCP machine type"
+    type        = string
+    default    = "t2a-standard-1"
+}
+
+variable "DOMAIN" {
+    description = "The GCP domain"
+    type        = string
+    default    = "smoliv.dev."
 }
