@@ -16,7 +16,7 @@ resource "google_compute_instance_group" "default" {
 resource "google_compute_managed_ssl_certificate" "default" {
   name = "smolivdev-ssl-cert"
   managed {
-    domains = ["swarm.smoliv.dev", "broker.smoliv.dev"]
+    domains = ["swarm.${var.DOMAIN}", "broker.${var.DOMAIN}"]
   }
 }
 

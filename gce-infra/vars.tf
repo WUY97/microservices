@@ -38,5 +38,5 @@ variable "MACHINE_TYPE" {
 variable "DOMAIN" {
     description = "The GCP domain"
     type        = string
-    default    = "smoliv.dev."
+    default    = "smoliv.dev"
 }

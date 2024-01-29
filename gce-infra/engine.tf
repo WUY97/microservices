@@ -16,7 +16,7 @@ resource "google_compute_instance" "node-1" {
   }
 
   service_account {
-    email = "sa-gomicro-tf-mac@t-pulsar-412422.iam.gserviceaccount.com"
+    email = var.TF_SERVICE_ACCOUNT
     scopes = ["https://www.googleapis.com/auth/cloud-platform"]
   }
 
