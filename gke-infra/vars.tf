@@ -32,7 +32,7 @@ variable "TF_SERVICE_ACCOUNT" {
 variable "MACHINE_TYPE" {
     description = "The GCP machine type"
     type        = string
-    default    = "e2-medium"
+    default    = "t2a-standard-1"
 }
 
 variable "DOMAIN" {

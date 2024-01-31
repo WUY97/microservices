@@ -16,3 +16,7 @@ for service in "${services[@]}"; do
     docker build -f "${service}.dockerfile" -t "yitong6577/${service}:${version}" .
     docker push "yitong6577/${service}:${version}"
 done
+
+cd ..
+cd ./project || exit
+docker buildx build -f caddy.production.dockerfile -t "yitong6577/micro-caddy-server:${version}" .
